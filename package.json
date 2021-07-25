@@ -2,7 +2,7 @@
   "name": "posthtml-rtl",
   "type": "module",
   "version": "1.0.0",
-  "description": "A flexible tool to convert your HTML to RTL.",
+  "description": "A flexible utility to convert HTML to RTL (right to left) and vice versa.",
   "main": "index.js",
   "bin": "bin/posthtml-rtl.js",
   "scripts": {
