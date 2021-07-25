@@ -1,0 +1,57 @@
+<html dir="rtl" lang="ar-AE">
+  <head>
+    <title>Posthtml RTL</title>
+    <style>
+      :root {
+        font-size: 2rem;
+        font-family: sans-serif;
+      }
+    </style>
+    <style>
+      .ignored-style-tag {
+        direction: ltr;
+      }
+    </style>
+    <style>
+      .walk-away {
+        display: flex;
+      }
+      .walking {
+        flex-shrink: 1;
+      }
+    </style>
+    <style>
+      .walking {
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ignored-style-tag"> Ignored style tag </div>
+    <div class="walk-away">
+      <div class="walking">🚶‍♂️</div>
+      <div>Walk away from text</div>
+    </div>
+    <img src="./asset-rtl.png" alt="كلام بالعربية">
+    <div style="border-right: 4px solid blue">border start blue</div>
+    <div style="padding-top: 30px">Will have more space in RTL</div>
+    <table border="1px">
+      <tbody>
+        <tr>
+          <td align="right" width="100px"> Start </td>
+          <td align="center" width="100px"> Center </td>
+          <td align="left" width="100px"> End </td>
+        </tr>
+        <tr>
+          <td colspan="3" dir="ltr" align="right" style="padding-left: 20px">Ignore dir & align</td>
+        </tr>
+        <tr>
+          <td align="right" colspan="3"> This one won't be ignored </td>
+        </tr>
+        <tr>
+          <td align="left" colspan="3"> But this one will be ignored </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "name": "posthtml-rtl",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A flexible tool to convert your HTML to RTL.",
+  "main": "index.js",
+  "bin": "bin/posthtml-rtl.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js",
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "posthtml",
+    "rtl",
+    "rtlcss"
+  ],
+  "author": {
+    "name": "Ahmed Hamdan",
+    "email": "me@ahmedhamdan.dev",
+    "url": "https://ahmedhamdan.dev/"
+  },
+  "license": "ISC",
+  "repository": "ahmed3hamdan/posthtml-rtl",
+  "homepage": "https://github.com/ahmed3hamdan/posthtml-rtl#readme",
+  "bugs": "https://github.com/ahmed3hamdan/posthtml-rtl/issues",
+  "dependencies": {
+    "get-stdin": "^9.0.0",
+    "lodash": "^4.17.21",
+    "meow": "^10.0.1",
+    "posthtml": "^0.16.4",
+    "rtlcss": "^3.3.0"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "prettier": "^2.3.2",
+    "xo": "^0.42.0"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ]
+  }
+}

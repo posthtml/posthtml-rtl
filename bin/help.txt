@@ -1,0 +1,16 @@
+Usage
+  $ posthtml-rtl <file>
+
+Options
+  --help          Display help instructions
+  --rtl           Output RTL HTML (true by default)
+  -o, --output    Path to write output (optional)
+
+Examples
+  $ posthtml ./index.html -o ./ar/index.html
+
+  $ echo '<html dir="ltr" lang="en-US" data-rtl-lang="ar-AE" data-ltr-remove="dir" style="float: left"></html>' | posthtml-rtl
+  <html dir="rtl" lang="ar-AE" style="float: right"></html>
+
+  $ echo '<html dir="ltr" lang="en-US" data-rtl-lang="ar-AE" data-ltr-remove="dir" style="float: left"></html>' | posthtml-rtl --rtl=false
+  <html lang="en-US" style="float: left"></html>
