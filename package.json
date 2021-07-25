@@ -3,15 +3,16 @@
   "type": "module",
   "version": "1.0.0",
   "description": "A flexible utility to convert HTML to RTL (right to left) and vice versa.",
-  "main": "index.js",
+  "main": "index.cjs",
   "bin": "bin/posthtml-rtl.js",
   "scripts": {
     "test": "xo && ava"
   },
   "files": [
-    "index.js",
-    "bin",
-    "lib"
+    "index.cjs",
+    "bin/help.txt",
+    "bin/posthtml-rtl.js",
+    "lib/posthtml-rtl.cjs"
   ],
   "keywords": [
     "posthtml",
